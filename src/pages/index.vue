@@ -58,7 +58,7 @@
                         class="mt-100px mb-20px lg:mb-100px fw-500 lg:fw-500 text-32px lg:text-64px leading-120% text-[#222222] text-left lg:text-center"
                     >
                         <span class="mr-20px">Все, что нужно для работы со своими клиентами</span>
-                        <img src="img/vk.svg" alt="ВКонтакте" class="inline h-24px lg:h-48px" />
+                        <img src="/img/vk.svg" alt="ВКонтакте" class="inline h-24px lg:h-48px" />
                         <div class="text-16px lg:text-36px">от запуска рекламы до сквозной аналитики</div>
                     </h1>  
                     <div
