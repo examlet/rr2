@@ -55,38 +55,41 @@
                     class="w-full mx-auto py-0 px-20px box-border relative lg:w-768px xl:w-1024px xl:px-32px"
                 >
                     <h1
-                        class="my-60px lg:my-100px text-28px sm:text-64px fw-500 leading-120% text-[#222222] text-center"
+                        class="my-80px md:my-100px text-28px sm:text-64px fw-500 leading-120% text-[#222222] text-left sm:text-center"
                     >
-                        <!-- <span class="mr-20px">Все, что нужно для работы со своими клиентами</span>
-                        <img src="/img/vk.svg" alt="ВКонтакте" class="inline h-24px lg:h-48px" />
-                        <div class="text-16px lg:text-36px">от запуска рекламы до сквозной аналитики</div>-->
-
-                        <span>
+                        <!-- <span>
                             Все, что нужно для
                             <br class="sm:hidden" />
                             работы с клиентами
                             <br class="md:hidden" />
                             <img src="/img/vk.svg" alt="ВКонтакте" class="inline h-24px lg:h-48px" />
                             вконтакте
+                        </span> -->
+                        <span>
+                            Все, что нужно для
+                            <br class="sm:hidden" />
+                            работы со своими
+                            <br class="md:hidden" />
+                            клиентами
+                            <img src="/img/vk.svg" alt="ВКонтакте" class="inline h-24px lg:h-48px" />
+                            вконтакте
                         </span>
-                        <span class="block mt-20px text-18px sm:text-36px leading-110%">
-                            от запуска рекламы
-                            <br class="md:hidden"/>
-                            до сквозной аналитики
-                        </span>
+                        <div class="block mt-20px text-18px sm:text-36px leading-110% text-center">
+                            <span class="-ml-80px">от запуска рекламы</span>
+                            <br/>
+                            <span class="-mr-80px">до сквозной аналитики</span>
+                        </div>
                     </h1>
                     <div class="text-16px sm:text-20px leading-140% mb-30px">
                         <span>
-                            После перехода начислим 500₽
-                            <br class="sm:hidden"/>
-                            на ваш счет,
-                            <br class="hidden sm:block"/>
+                            После перехода начислим 500₽ на ваш счет,
+                            <br/>
                             чтобы вы смогли протестировать сервис
                         </span>
                     </div>
                     <div class="flex flex-row items-center">
                         <button
-                            class="font-medium h-46px w-full md:w-250px rounded-sm transition-colors duration-300 text-[#222] hover:text-[#fff] bg-[#80eec0] hover:bg-[#00dc82] focus:bg-[#cceada] active:bg-[#bfe5d1]"
+                            class="text-20px font-medium h-64px w-full md:w-250px rounded-sm transition-colors duration-150 text-[#222] hover:text-[#fff] bg-[#80eec0] hover:bg-[#00dc82] focus:bg-[#cceada] active:bg-[#bfe5d1]"
                         >Перейти в кабинет</button>
                     </div>
 
