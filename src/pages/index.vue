@@ -55,32 +55,24 @@
                     class="w-full mx-auto py-0 px-20px box-border relative lg:w-768px xl:w-1024px xl:px-32px"
                 >
                     <h1
-                        class="my-80px md:my-100px text-28px sm:text-64px fw-500 leading-120% text-[#222222] text-left sm:text-center"
+                        class="mt-80px mb-30px md:my-100px text-24px sm:text-64px fw-500 leading-120% text-[#222222] text-left md:text-center"
                     >
-                        <!-- <span>
-                            Все, что нужно для
-                            <br class="sm:hidden" />
-                            работы с клиентами
-                            <br class="md:hidden" />
-                            <img src="/img/vk.svg" alt="ВКонтакте" class="inline h-24px lg:h-48px" />
-                            вконтакте
-                        </span> -->
                         <span>
                             Все, что нужно для
                             <br class="sm:hidden" />
                             работы со своими
                             <br class="md:hidden" />
                             клиентами
-                            <img src="/img/vk.svg" alt="ВКонтакте" class="inline h-24px lg:h-48px" />
+                            <img src="/img/vk.svg" alt="ВКонтакте" class="inline h-20px lg:h-48px" />
                             вконтакте
                         </span>
                         <div class="block mt-20px text-18px sm:text-36px leading-110% text-center">
-                            <span class="-ml-80px">от запуска рекламы</span>
-                            <br/>
-                            <span class="-mr-80px">до сквозной аналитики</span>
+                            <span class="-ml-80px md:ml-0">от запуска рекламы </span>
+                            <br class="lg:hidden"/>
+                            <span class="-mr-50px md:ml-0">до сквозной аналитики</span>
                         </div>
                     </h1>
-                    <div class="text-16px sm:text-20px leading-140% mb-30px">
+                    <div class="text-13px sm:text-20px leading-140% mb-30px">
                         <span>
                             После перехода начислим 500₽ на ваш счет,
                             <br/>
@@ -89,7 +81,7 @@
                     </div>
                     <div class="flex flex-row items-center">
                         <button
-                            class="text-20px font-medium h-64px w-full md:w-250px rounded-sm transition-colors duration-150 text-[#222] hover:text-[#fff] bg-[#80eec0] hover:bg-[#00dc82] focus:bg-[#cceada] active:bg-[#bfe5d1]"
+                            class="text-20px font-medium h-64px w-full md:w-410px rounded-sm transition-colors duration-150 text-[#222] hover:text-[#fff] bg-[#80eec0] hover:bg-[#00dc82] focus:bg-[#cceada] active:bg-[#bfe5d1]"
                         >Перейти в кабинет</button>
                     </div>
 
@@ -103,19 +95,15 @@
                 </div>
             </section>
 
-            <section id="about" class="mt-140px">
-                <div
-                    class="w-full mx-auto py-0 px-20px box-border relative lg:w-768px xl:w-1024px xl:px-32px hidden lg:block"
-                >
-                    <div class="bg-[#f3f4f6] rounded-xl w-1024px h-350px p-40px">
-                        <h1 class="text-28px text-[#222222] w-60%">
-                            <span>QuickSales — это CRM, мессенджер, посадочные страницы, рассылки, чат-боты и рекламный кабинет в одном сервисе.</span>
-                        </h1>
-                    </div>
+            <section id="about" class="mt-100px">
+                <div class="relative bg-[#f3f4f6] w-full h-500px">
+                    <h1 class="text-18px text-[#222222] pt-35px px-20px">
+                        <span>QuickSales — это CRM-система, мессенджер, конструктор посадочных страниц, сервис рассылок, чат-ботов и рекламный кабинет в одном месте.</span>
+                     </h1>
                 </div>
             </section>
 
-            <section class="mt-100px"></section>
+            <section class="mt-500px"></section>
         </main>
     </div>
 </template>
