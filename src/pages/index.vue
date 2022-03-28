@@ -22,7 +22,7 @@
                             <a
                                 href="#price"
                                 class="ml-32px text-[#6d7885] hover:text-[#222] transition-colors duration-300"
-                            >Калькулятор стоимости</a>
+                            >Стоимость</a>
                             <a
                                 href="#faq"
                                 class="ml-32px text-[#6d7885] hover:text-[#222] transition-colors duration-300"
