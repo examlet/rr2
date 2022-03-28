@@ -81,13 +81,13 @@
                     </div>
                     <div class="flex flex-row items-center">
                         <button
-                            class="text-20px font-medium h-64px w-full md:w-410px rounded-sm transition-colors duration-150 text-[#222] hover:text-[#fff] bg-[#80eec0] hover:bg-[#00dc82] focus:bg-[#cceada] active:bg-[#bfe5d1]"
+                            class="text-16px font-medium h-46px w-full md:w-410px rounded-sm transition-colors duration-150 text-[#222] hover:text-[#fff] bg-[#80eec0] hover:bg-[#00dc82] focus:bg-[#cceada] active:bg-[#bfe5d1]"
                         >Перейти в кабинет</button>
                     </div>
 
                     <a
                         href="#about"
-                        class="flex text-14px lg:text-20px flex-row items-center hover:cursor-poiner mt-60px animate-bounce-alt animate-count-1 animate-1s"
+                        class="flex text-14px lg:text-20px flex-row items-center hover:cursor-poiner mt-90px animate-bounce-alt animate-count-1 animate-1s"
                     >
                         <div class="i-carbon-sort-descending w-30px h-12px" />
                         <span>Подробнее о сервисе</span>
@@ -95,7 +95,7 @@
                 </div>
             </section>
 
-            <section id="about" class="mt-100px">
+            <section id="about" class="mt-90px">
                 <div class="relative bg-[#f3f4f6] w-full h-500px">
                     <h1 class="text-18px text-[#222222] pt-35px px-20px">
                         <span>QuickSales — это CRM-система, мессенджер, конструктор посадочных страниц, сервис рассылок, чат-ботов и рекламный кабинет в одном месте.</span>
