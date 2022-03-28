@@ -87,7 +87,7 @@
 
                     <a
                         href="#about"
-                        class="flex text-14px lg:text-20px flex-row items-center hover:cursor-poiner mt-90px animate-bounce-alt animate-count-1 animate-1s"
+                        class="flex text-14px lg:text-20px flex-row items-center hover:cursor-poiner mt-60px md:mt-90px animate-bounce-alt animate-count-1 animate-1s"
                     >
                         <div class="i-carbon-sort-descending w-30px h-12px" />
                         <span>Подробнее о сервисе</span>
@@ -95,10 +95,10 @@
                 </div>
             </section>
 
-            <section id="about" class="mt-90px">
+            <section id="about" class="pt-63px md:mt-90px">
                 <div class="relative bg-[#f3f4f6] w-full h-500px">
-                    <h1 class="text-18px text-[#222222] pt-35px px-20px">
-                        <span>QuickSales — это CRM-система, мессенджер, конструктор посадочных страниц, сервис рассылок, чат-ботов и рекламный кабинет в одном месте.</span>
+                    <h1 class="text-16px text-[#222222] pt-35px px-20px">
+                        <span>QuickSales — это CRM-система, мессенджер, конструктор посадочных страниц, сервис рассылок, чат-ботов и рекламный кабинет в одном месте</span>
                      </h1>
                 </div>
             </section>
