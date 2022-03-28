@@ -3,7 +3,7 @@
 
 <template>
     <NuxtLayout name="app">
-        
+        кек
     </NuxtLayout>
 </template>
 

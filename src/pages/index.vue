@@ -8,25 +8,25 @@
                 <div
                     class="flex flex-row justify-between items-center h-full | w-full my-0 mx-auto py-0 px-20px box-border relative lg:w-768px xl:w-1024px xl:px-32px"
                 >
-                    <div class="flex w-full lg:w-150px">
+                    <div class="flex w-full lg:w-200px">
                         <NuxtLink to="/">
                             <img src="/img/logo.png" alt="Quick Sales" width="150px" height="30px" />
                         </NuxtLink>
                     </div>
                     <div class="flex justify-between w-full items-center">
                         <div class="flex flex-row items-center !hidden !lg:block">
-                            <NuxtLink
-                                to="#features"
+                            <a
+                                href="#features"
                                 class="ml-32px text-[#6d7885] hover:text-[#222] transition-colors duration-300"
-                            >Возможности</NuxtLink>
-                            <NuxtLink
+                            >Возможности</a>
+                            <a
                                 href="#tariffs"
                                 class="ml-32px text-[#6d7885] hover:text-[#222] transition-colors duration-300"
-                            >Тарифы</NuxtLink>
-                            <NuxtLink
+                            >Тарифы</a>
+                            <a
                                 href="#faq"
                                 class="ml-32px text-[#6d7885] hover:text-[#222] transition-colors duration-300"
-                            >FAQ</NuxtLink>
+                            >FAQ</a>
                         </div>
                         <div class="flex flex-row items-center !hidden !lg:block">
                             <button
@@ -55,47 +55,64 @@
                     class="w-full mx-auto py-0 px-20px box-border relative lg:w-768px xl:w-1024px xl:px-32px"
                 >
                     <h1
-                        class="mt-100px mb-20px lg:mb-100px fw-500 lg:fw-500 text-32px lg:text-64px leading-120% text-[#222222] text-left lg:text-center"
+                        class="my-60px lg:my-100px text-28px sm:text-64px fw-500 leading-120% text-[#222222] text-center"
                     >
-                        <span class="mr-20px">Все, что нужно для работы со своими клиентами</span>
+                        <!-- <span class="mr-20px">Все, что нужно для работы со своими клиентами</span>
                         <img src="/img/vk.svg" alt="ВКонтакте" class="inline h-24px lg:h-48px" />
-                        <div class="text-16px lg:text-36px">от запуска рекламы до сквозной аналитики</div>
-                    </h1>  
-                    <div
-                        class="w-full lg:w-540px text-16px lg:text-20px leading-140% mb-30px"
-                    >
-                        <span>После регистрации начислим 500₽ на ваш счет, чтобы вы смогли протестировать сервис в течение 14 дней</span>
+                        <div class="text-16px lg:text-36px">от запуска рекламы до сквозной аналитики</div>-->
+
+                        <span>
+                            Все, что нужно для
+                            <br class="sm:hidden" />
+                            работы с клиентами
+                            <br class="md:hidden" />
+                            <img src="/img/vk.svg" alt="ВКонтакте" class="inline h-24px lg:h-48px" />
+                            вконтакте
+                        </span>
+                        <span class="block mt-20px text-18px sm:text-36px leading-110%">
+                            от запуска рекламы
+                            <br class="md:hidden"/>
+                            до сквозной аналитики
+                        </span>
+                    </h1>
+                    <div class="text-16px sm:text-20px leading-140% mb-30px">
+                        <span>
+                            После перехода начислим 500₽
+                            <br class="sm:hidden"/>
+                            на ваш счет,
+                            <br class="hidden sm:block"/>
+                            чтобы вы смогли протестировать сервис
+                        </span>
                     </div>
                     <div class="flex flex-row items-center">
                         <button
                             class="font-medium h-46px w-full md:w-250px rounded-sm transition-colors duration-300 text-[#222] hover:text-[#fff] bg-[#80eec0] hover:bg-[#00dc82] focus:bg-[#cceada] active:bg-[#bfe5d1]"
-                        >Подключить сообщество</button>
+                        >Перейти в кабинет</button>
                     </div>
 
-                    <div
-                        class="flex text-18px lg:text-20px flex-row items-center hover:cursor-poiner mt-60px animate-bounce-alt animate-count-1 animate-1s"
+                    <a
+                        href="#about"
+                        class="flex text-14px lg:text-20px flex-row items-center hover:cursor-poiner mt-60px animate-bounce-alt animate-count-1 animate-1s"
                     >
-                        <div class="i-carbon-sort-descending w-40px" />
+                        <div class="i-carbon-sort-descending w-30px h-12px" />
                         <span>Подробнее о сервисе</span>
-                    </div>
+                    </a>
                 </div>
             </section>
 
-            <section class="mt-100px">
-                <div class="w-full mx-auto py-0 px-20px box-border relative lg:w-768px xl:w-1024px xl:px-32px hidden lg:block">
+            <section id="about" class="mt-140px">
+                <div
+                    class="w-full mx-auto py-0 px-20px box-border relative lg:w-768px xl:w-1024px xl:px-32px hidden lg:block"
+                >
                     <div class="bg-[#f3f4f6] rounded-xl w-1024px h-350px p-40px">
                         <h1 class="text-28px text-[#222222] w-60%">
-                            <span>
-                                QuickSales — это CRM, мессенджер, посадочные страницы, рассылки, чат-боты и рекламный кабинет в одном сервисе.
-                            </span>
+                            <span>QuickSales — это CRM, мессенджер, посадочные страницы, рассылки, чат-боты и рекламный кабинет в одном сервисе.</span>
                         </h1>
                     </div>
                 </div>
             </section>
 
-            <section class="mt-100px">
-                
-            </section>
+            <section class="mt-100px"></section>
         </main>
     </div>
 </template>

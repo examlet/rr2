@@ -8,8 +8,8 @@
     <path id="svg_5" d="m26.35656,63.64776a10.20161,10.20161 0 1 0 5.83478,3.36013l12.20489,-21.3594l1.6767,-2.92244l-2.92244,-1.67333a16.83433,16.83433 0 1 1 22.9351,-6.2085l5.82805,3.3736a23.56807,23.56807 0 1 0 -34.8336,6.85494c-1.53866,2.49822 -3.71029,6.29941 -6.97951,12.02645l-3.74396,6.54856l-0.00001,-0.00001z" fill="#80eec0" stroke="null"/>
    </g>
    <g id="svg_7">
-    <text stroke="#222222" fill="#222222" x="125.39581" y="74.66666" id="svg_2" font-size="72" font-family="'Jura'" text-anchor="start" xml:space="preserve" font-weight="bold" stroke-width="2">quick</text>
-    <text stroke="#00dc82" fill="#00dc82" stroke-width="2" x="313.55208" y="74.66667" id="svg_8" font-size="72" font-family="'Jura'" text-anchor="start" xml:space="preserve">sales</text>
+    <text fill="#222222" x="125.39578" y="68.66666" id="svg_2" font-size="72" font-family="'Jura'" text-anchor="start" xml:space="preserve" font-weight="bold" stroke-width="2" stroke="#222222">quick</text>
+    <text fill="#00dc82" stroke-width="2" x="313.55205" y="68.66667" id="svg_8" font-size="72" font-family="'Jura'" text-anchor="start" xml:space="preserve" stroke="#00dc82">sales</text>
    </g>
   </g>
  </g>
