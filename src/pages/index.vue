@@ -97,7 +97,7 @@
 
             <section id="about" class="pt-63px md:mt-90px">
                 <div class="relative bg-[#f3f4f6] w-full h-500px">
-                    <h1 class="text-14px text-[#222222] pt-35px px-20px">
+                    <h1 class="text-18px text-[#222222] pt-35px px-20px">
                         <span>Quick Sales — это CRM-система, мессенджер, конструктор посадочных страниц, рассылок, чат-ботов и рекламный кабинет в одном месте</span>
                      </h1>
                 </div>
