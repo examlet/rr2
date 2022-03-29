@@ -2,16 +2,16 @@
 </script>
 
 <template>
-    <div class="bg-[#fff] pt-64px flex flex-col min-h-screen">
+    <div id="start" class="bg-[#fff] pt-64px flex flex-col min-h-screen">
         <header class="fixed top-0 left-0 right-0 h-64px bg-[#fff] z-11">
             <div class="w-full h-full bg-[#fff] z-100 absolute border-b border-[#e7e8ec]">
                 <div
-                    class="flex flex-row justify-between items-center h-full | w-full my-0 mx-auto py-0 px-20px box-border relative lg:w-768px xl:w-1024px xl:px-32px"
+                    class="flex flex-row justify-between items-center h-full | w-full my-0 mx-auto py-0 px-20px box-border relative lg:w-768px xl:w-1024px xl:px-0px"
                 >
                     <div class="flex w-full lg:w-200px">
-                        <NuxtLink to="/">
+                        <a href="#start">
                             <img src="/img/logo.png" alt="Quick Sales" width="150px" height="30px" />
-                        </NuxtLink>
+                        </a>
                     </div>
                     <div class="flex justify-between w-full items-center">
                         <div class="flex flex-row items-center !hidden !lg:block">
@@ -52,7 +52,7 @@
         <main class="flex-grow flex-shrink-0 basis-auto">
             <section class="pb-0">
                 <div
-                    class="w-full mx-auto py-0 px-20px box-border relative lg:w-768px xl:w-1024px xl:px-32px"
+                    class="w-full mx-auto py-0 px-20px box-border relative lg:w-768px xl:w-1024px xl:px-0px"
                 >
                     <h1
                         class="mt-80px mb-30px md:my-100px text-24px sm:text-64px fw-500 leading-120% text-[#222222] text-left md:text-center"
@@ -95,15 +95,56 @@
                 </div>
             </section>
 
-            <section id="about" class="pt-63px md:mt-90px">
-                <div class="relative bg-[#f3f4f6] w-full h-500px">
-                    <h1 class="text-18px text-[#222222] pt-35px px-20px">
-                        <span>Quick Sales — это CRM-система, мессенджер, конструктор посадочных страниц, рассылок, чат-ботов и рекламный кабинет в одном месте</span>
+            <section id="about" class="pt-63px md:pt-90px">
+                <div 
+                    class="relative w-full h-500px lg:h-350px mx-auto lg:w-768px xl:w-1024px lg:rounded-xl"
+                    style="background: #f8f9fa url(/img/banner.png) 100% 100% no-repeat; background-size: contain;"
+                >
+                    <h1 class="text-18px text-[#222222] pt-35px px-20px sm:p-35px sm:text-24px">
+                        <span>
+                        Quick Sales — это CRM-система, мессенджер,
+                        <br class="hidden sm:block">
+                        конструктор посадочных страниц, рассылок,
+                         <br class="hidden sm:block">
+                        чат-ботов и рекламный кабинет в одном месте
+                        </span>
                      </h1>
                 </div>
             </section>
 
-            <section class="mt-500px"></section>
+            <section id="features" class="pt-90px h-400px">
+                <div class="w-full my-0 mx-auto py-0 px-20px box-border relative lg:w-768px xl:w-1024px xl:px-0px">
+                    <span class="fw500 text-24px text-[#222222]">
+                        Возможности
+                    </span>
+                </div>
+            </section>
+
+            <section id="price" class="pt-90px h-400px">
+                <div class="w-full my-0 mx-auto py-0 px-20px box-border relative lg:w-768px xl:w-1024px xl:px-0px">
+                    <span class="fw500 text-24px text-[#222222]">
+                        Стоимость
+                    </span>
+                </div>
+            </section>
+
+            <section id="faq" class="pt-90px h-400px">
+                <div class="w-full my-0 mx-auto py-0 px-20px box-border relative lg:w-768px xl:w-1024px xl:px-0px">
+                    <span class="fw500 text-24px text-[#222222]">
+                        FAQ
+                    </span>
+                </div>
+            </section>
         </main>
+
+        <footer class="h-500px">
+            <div class="bg-[#f8f9fa] h-full border-t border-[#e7e8ec]">
+                <div class="w-full my-0 mx-auto py-0 px-20px box-border relative lg:w-768px xl:w-1024px xl:px-0px">
+                    <div class="pt-50px">
+                        О проекте
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </template>
