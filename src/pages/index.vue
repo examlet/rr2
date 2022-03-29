@@ -140,7 +140,7 @@
         <footer class="h-500px">
             <div class="bg-[#f8f9fa] h-full border-t border-[#e7e8ec]">
                 <div class="w-full my-0 mx-auto py-0 px-20px box-border relative lg:w-768px xl:w-1024px xl:px-0px">
-                    <div class="pt-50px">
+                    <div class="pt-20px">
                         О проекте
                     </div>
                 </div>
