@@ -135,6 +135,30 @@
                     </span>
                 </div>
             </section>
+
+            <section class="pt-90px mb-100px">
+                <div class="w-full my-0 mx-auto py-0 px-20px box-border relative lg:w-768px xl:w-1024px xl:px-0px">
+                    <div class="grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-20px">
+                        <div class="flex flex-culumn items-start">
+                            <h2 class="text-[#222222] text-24px md:text-36px fw-500 mb-40px">
+                                <div class="mb-20px">
+                                    Подключите свое первое
+                                    сообщество уже
+                                    <br />
+                                    сейчас
+                                </div>
+                                <button
+                                class="text-16px font-medium h-46px w-full md:w-250px rounded-sm transition-colors duration-150 text-[#222] hover:text-[#fff] bg-[#80eec0] hover:bg-[#00dc82] focus:bg-[#cceada] active:bg-[#bfe5d1]"
+                            >Перейти в кабинет</button>
+                            </h2>
+                            
+                        </div>
+                        <div class="relative flex justify-center">
+                            <img src="/img/action.svg" alt="Действие">
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer class="h-500px">
