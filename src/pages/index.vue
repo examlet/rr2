@@ -1,7 +1,10 @@
 <script lang="ts" setup>
 const submenu_hidden = ref(true);
 const changeSubmenu = () => submenu_hidden.value = !submenu_hidden.value;
-const scrollIntoView = (el: string) => document.getElementById(el).scrollIntoView();
+const scrollIntoView = (el: string) => {
+    document.getElementById(el).scrollIntoView()
+    submenu_hidden.value = true;
+};
 </script>
 
 <template>
@@ -94,7 +97,7 @@ const scrollIntoView = (el: string) => document.getElementById(el).scrollIntoVie
         <main flex="grow shrink-0" basis-auto>
             <section id="start" pt="104px xl:164px">
                 <div w="full xl:1024px" p="x-20px lg:0" relative mx-auto>
-                    <h1 fw-500 leading="120%" text="[#222222] 28px xl:64px xl:center">
+                    <h1 fw-500 leading="120%" text="[#222222] 30px xl:64px xl:center">
                         Все, что нужно для
                         <br xl:hidden />работы
                         <br hidden xl:block />со своими лидами
@@ -108,11 +111,9 @@ const scrollIntoView = (el: string) => document.getElementById(el).scrollIntoVie
                         />
                         вконтакте
                     </h1>
-                    <h2 text="center [#222222] 18px xl:36px" fw-500 mt-20px leading="110%">
-                            <span ml="-80px xl:0">от запуска рекламы </span>
-                            <br class="lg:hidden" />
-                            <span mr="-50px xl:0">до сквозной аналитики</span>
-                        </h2>
+                    <h2 text="[#222222] 14px xl:36px xl:center" mt="40px xl:20px" fw-500 mt-40px leading="110%">
+                        от запуска рекламы до сквозной аналитики
+                    </h2>
                     <div text="14px xl:20px" mt="40px xl:100px">
                         После перехода начислим 500₽ на ваш счет,
                         <br />чтобы вы смогли протестировать сервис
@@ -124,8 +125,8 @@ const scrollIntoView = (el: string) => document.getElementById(el).scrollIntoVie
                     </div>
                     <div cursor-pointer text="14px xl:20px" mt-90px>
                         <a onclick="document.getElementById('about').scrollIntoView();">
-                            <div i-carbon-sort-descending w-30px h-12px />
-                            <span>подробнее о сервисе</span>
+                            <div i-carbon-sort-descending w-40px  />
+                            <span>Подробнее о сервисе</span>
                         </a>
                     </div>
                 </div>
