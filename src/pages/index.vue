@@ -184,7 +184,7 @@ const scrollIntoView = (el: string) => {
                                     сервису уже сейчас
                                 </div>
                                 <button
-                                    transition-colors duration-150 fw-500 h-46px rounded-sm w="full xl:250px" text="16px [#222222] hover:[#00dc82]" bg="[#80eec0] hover:[#00dc82] focus:[#cceada] active:[#bfe5d1]"
+                                    transition-colors duration-150 fw-500 h-46px rounded-sm w="full xl:250px" text="16px [#222222] hover:[#ffffff] focus:[#ffffff] active:[#ffffff]" bg="[#80eec0] hover:[#00dc82] focus:[#00dc82] active:[#00dc82]"
                                 >Перейти в кабинет</button>
                             </h2>
                         </div>
