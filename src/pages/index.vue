@@ -95,7 +95,7 @@ const scrollIntoView = (el: string) => {
         </header>
 
         <main flex="grow shrink-0" basis-auto>
-            <section id="start" pt="104px xl:164px">
+            <section id="start" pt-164px>
                 <div w="full xl:1024px" p="x-20px lg:0" relative mx-auto>
                     <h1 fw-500 leading="120%" text="[#222222] 30px xl:64px xl:center">
                         Все, что нужно для
@@ -132,7 +132,7 @@ const scrollIntoView = (el: string) => {
                 </div>
             </section>
 
-            <section id="about" pt="63px xl:93px">
+            <section id="about" pt="93px">
                 <div 
                     class="relative w-full h-400px lg:h-350px mx-auto lg:w-768px xl:w-1024px lg:rounded-xl"
                     style="background: #f8f9fa url(/img/banner.png) 100% 100% no-repeat; background-size: 320px;"
