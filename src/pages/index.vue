@@ -94,7 +94,7 @@ const scrollIntoView = (el: string) => document.getElementById(el).scrollIntoVie
         <main flex="grow shrink-0" basis-auto>
             <section id="start" pt="104px xl:164px">
                 <div w="full xl:1024px" p="x-20px lg:0" relative mx-auto>
-                    <h1 fw-500 leading="120%" text="[#222222] 28px xl:64px center">
+                    <h1 fw-500 leading="120%" text="[#222222] 28px xl:64px xl:center">
                         Все, что нужно для
                         <br xl:hidden />работы
                         <br hidden xl:block />со своими лидами
@@ -125,7 +125,7 @@ const scrollIntoView = (el: string) => document.getElementById(el).scrollIntoVie
                     <div cursor-pointer text="14px xl:20px" mt-90px>
                         <a onclick="document.getElementById('about').scrollIntoView();">
                             <div i-carbon-sort-descending w-30px h-12px />
-                            <span>Подробнее о сервисе</span>
+                            <span>подробнее о сервисе</span>
                         </a>
                     </div>
                 </div>
