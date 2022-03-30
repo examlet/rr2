@@ -120,7 +120,7 @@ const scrollIntoView = (el: string) => {
                     </div>
                     <div mt-20px>
                         <button
-                            transition-colors duration-150 fw-500 h-46px rounded-sm w="full xl:250px" text="16px [#222222] hover:[#00dc82]" bg="[#80eec0] hover:[#00dc82] focus:[#cceada] active:[#bfe5d1]"
+                            transition-colors duration-150 fw-500 h-46px rounded-sm w="full xl:250px" text="16px [#222222] hover:[#ffffff] focus:[#ffffff] active:[#ffffff]" bg="[#80eec0] hover:[#00dc82] focus:[#00dc82] active:[#00dc82]"
                         >Перейти в кабинет</button>
                     </div>
                     <div cursor-pointer text="14px xl:20px" mt-90px>
@@ -149,7 +149,7 @@ const scrollIntoView = (el: string) => {
                 </div>
             </section>
 
-            <section id="features" pt="63px xl:90px" h-400px>
+            <section id="features" pt="84px xl:94px" h-400px>
                 <div w="full xl:1024px" p="x-20px lg:0" relative mx-auto>
                     <span text="24px [#222222]" fw500>
                         Возможности
@@ -157,7 +157,7 @@ const scrollIntoView = (el: string) => {
                 </div>
             </section>
 
-            <section id="price" pt="63px xl:90px" h-400px>
+            <section id="price" pt="84px xl:94px" h-400px>
                 <div w="full xl:1024px" p="x-20px lg:0" relative mx-auto>
                     <span text="24px [#222222]" fw500>
                         Стоимость
@@ -165,7 +165,7 @@ const scrollIntoView = (el: string) => {
                 </div>
             </section>
 
-            <section id="faq" pt="63px xl:90px" h-400px>
+            <section id="faq" pt="84px xl:94px" h-400px>
                 <div w="full xl:1024px" p="x-20px lg:0" relative mx-auto>
                     <span text="24px [#222222]" fw500>
                         FAQ
@@ -173,7 +173,7 @@ const scrollIntoView = (el: string) => {
                 </div>
             </section>
 
-            <section id="action" pt="63px xl:90px">
+            <section id="action" pt="84px xl:94px">
                 <div w="full xl:1024px" p="x-20px lg:0" relative mx-auto>
                     <div grid grid-cols="1 xl:[1fr_1fr]" gap-20px>
                         <div flex flex-culumn items-start>
@@ -196,7 +196,7 @@ const scrollIntoView = (el: string) => {
             </section>
         </main>
 
-        <footer pt="63px xl:90px">
+        <footer pt="84px xl:94px">
             <div bg="[#f8f9fa]" border="t [#e7e8ec]" h-full>
                 <div w="full xl:1024px" p="x-20px lg:0" relative mx-auto>
                     <div grid grid-cols-3 text-center py-10px text-14px>
