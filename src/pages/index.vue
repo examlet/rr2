@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+const submenu_hidden = ref(true)
+const changeSubmenu = () => submenu_hidden.value = !submenu_hidden.value
 </script>
 
 <template>
@@ -35,8 +37,7 @@
                             </button>
                         </div>
                     </div>
-
-                    <div flex xl:hidden items-center>
+                    <div flex xl:hidden items-center @click="changeSubmenu">
                         <div relative inline-block w-20px h-24px space-y-1 h-full>
                             <div bg="[#222222]" top="-6px" w-20px h-2px rounded-4px />
                             <div bg="[#222222]" w-20px h-2px rounded-4px />
@@ -45,12 +46,54 @@
                     </div>
                 </div>
             </div>
+            <div 
+                class="absolute block xl:hidden bg-[#fff] rounded top-64px shadow-lg w-full transition duration-300 -z-1" 
+                :class="[submenu_hidden ? '-translate-y-120%' : '-translate-y-0']"
+            >
+                <div flex flex-col py-30px text-18px | w="full xl:1024px" p="x-20px lg:0" relative mx-auto>
+                    <div h-28px>
+                        <a
+                            cursor-pointer onclick="document.getElementById('features').scrollIntoView();"
+                            text="[#222222]" flex items-center justify-start
+                        >
+                            <div i-carbon-star-review />
+                            <span ml-10px>Возможности для каждого</span>
+                        </a>
+                    </div>
+                    <div h-28px mt-20px>
+                        <a
+                            cursor-pointer onclick="document.getElementById('price').scrollIntoView();"
+                            text="[#222222]" flex items-center justify-start
+                        >
+                            <div i-carbon-calculator />
+                            <span ml-10px>Расчитать стоимость</span>
+                        </a>
+                    </div>
+                    <div h-28px mt-20px>
+                        <a
+                            cursor-pointer onclick="document.getElementById('faq').scrollIntoView();"
+                            text="[#222222]" flex items-center justify-start
+                        >
+                            <div i-carbon-query />
+                            <span ml-10px>Ответы на вопросы</span>
+                        </a>
+                    </div>
+                    <div h-28px mt-20px>
+                        <button
+                        border="1 solid gray-500 opacity-40" text="[#222222]" rounded-md w-full h-36px font-medium items-center
+                        >
+                            <div i-carbon-cloud-logging mb-3px w-40px />
+                            <span>Перейти в кабинет</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </header>
 
         <main flex="grow shrink-0" basis-auto>
             <section id="start" pt="104px xl:164px">
                 <div w="full xl:1024px" p="x-20px lg:0" relative mx-auto>
-                    <h1 fw-500 leading-120% text="[#222222] 28px xl:64px xl:center">
+                    <h1 fw-500 leading="120%" text="[#222222] 28px xl:64px center">
                         <span>
                             Все, что нужно для
                             <br xl:hidden />работы
@@ -65,7 +108,7 @@
                             />
                             вконтакте
                         </span>
-                        <h2 text="center [#222222] 18px xl:36px" fw-500 mt-20px leading-110%>
+                        <h2 text="center [#222222] 18px xl:36px" fw-500 mt-20px leading="110%">
                             <span ml="-80px xl:0">от запуска рекламы</span>
                             <br class="lg:hidden" />
                             <span mr="-50px xl:0">до сквозной аналитики</span>
@@ -77,18 +120,19 @@
                     </div>
                     <div mt-20px>
                         <button
-                            class="text-18px font-medium h-46px w-full md:w-410px rounded-sm transition-colors duration-150 text-[#222] hover:text-[#fff] bg-[#80eec0] hover:bg-[#00dc82] focus:bg-[#cceada] active:bg-[#bfe5d1]"
+                            transition-colors duration-150 fw-500 h-46px rounded-sm w="full xl:250px" text="16px [#222222] hover:[#00dc82]" bg="[#80eec0] hover:[#00dc82] focus:[#cceada] active:[#bfe5d1]"
                         >Перейти в кабинет</button>
                     </div>
-
-                    <div text="14px xl:20px" mt-90px>
-                        <div i-carbon-sort-descending w-30px h-12px />
-                        <span>Подробнее о сервисе</span>
+                    <div cursor-pointer text="14px xl:20px" mt-90px>
+                        <a onclick="document.getElementById('about').scrollIntoView();">
+                            <div i-carbon-sort-descending w-30px h-12px />
+                            <span>Подробнее о сервисе</span>
+                        </a>
                     </div>
                 </div>
             </section>
 
-            <section id="about" pt="63px xl:90px">
+            <section id="about" pt="63px xl:93px">
                 <div 
                     class="relative w-full h-400px lg:h-350px mx-auto lg:w-768px xl:w-1024px lg:rounded-xl"
                     style="background: #f8f9fa url(/img/banner.png) 100% 100% no-repeat; background-size: 320px;"
@@ -130,24 +174,22 @@
             </section>
 
             <section id="action" pt="63px xl:90px">
-                <div class="w-full my-0 mx-auto py-0 px-20px box-border relative lg:w-768px xl:w-1024px xl:px-0px">
-                    <div class="grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-20px">
-                        <div class="flex flex-culumn items-start">
-                            <h2 class="text-[#222222] text-24px md:text-36px fw-500 mb-40px">
-                                <div class="mb-20px">
-                                    Подключите свое первое
-                                    сообщество уже
-                                    <br />
-                                    сейчас
+                <div w="full xl:1024px" p="x-20px lg:0" relative mx-auto>
+                    <div grid grid-cols="1 xl:[1fr_1fr]" gap-20px>
+                        <div flex flex-culumn items-start>
+                            <h2 text="[#222222] 24px xl:36px" fw-500 my-20px>
+                                <div mb-20px>
+                                    Подключите свое первое<br />
+                                    сообщество к нашему<br />
+                                    сервису уже сейчас
                                 </div>
                                 <button
-                                class="text-16px font-medium h-46px w-full md:w-250px rounded-sm transition-colors duration-150 text-[#222] hover:text-[#fff] bg-[#80eec0] hover:bg-[#00dc82] focus:bg-[#cceada] active:bg-[#bfe5d1]"
-                            >Перейти в кабинет</button>
+                                    transition-colors duration-150 fw-500 h-46px rounded-sm w="full xl:250px" text="16px [#222222] hover:[#00dc82]" bg="[#80eec0] hover:[#00dc82] focus:[#cceada] active:[#bfe5d1]"
+                                >Перейти в кабинет</button>
                             </h2>
-                            
                         </div>
-                        <div class="relative flex justify-center">
-                            <img src="/img/action.svg" alt="Действие">
+                        <div relative flex justify-center>
+                            <img src="/img/action.svg" alt="Действие" width="auto" height="auto">
                         </div>
                     </div>
                 </div>
