@@ -111,10 +111,10 @@ const scrollIntoView = (el: string) => {
                         />
                         вконтакте
                     </h1>
-                    <h2 text="[#222222] 14px xl:36px xl:center" mt="40px xl:20px" fw-500 mt-40px leading="110%">
+                    <h2 text="[#222222] 14px xl:36px xl:center" mt-20px fw-500 leading="110%">
                         от запуска рекламы до сквозной аналитики
                     </h2>
-                    <div text="14px xl:20px" mt="40px xl:100px">
+                    <div text="14px xl:20px" mt-100px>
                         После перехода начислим 500₽ на ваш счет,
                         <br />чтобы вы смогли протестировать сервис
                     </div>
