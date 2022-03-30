@@ -3,7 +3,7 @@
 
 <template>
     <NuxtLayout name="auth">
-        
+        123
     </NuxtLayout>
 </template>
 

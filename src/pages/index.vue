@@ -1,6 +1,7 @@
 <script lang="ts" setup>
-const submenu_hidden = ref(true)
-const changeSubmenu = () => submenu_hidden.value = !submenu_hidden.value
+const submenu_hidden = ref(true);
+const changeSubmenu = () => submenu_hidden.value = !submenu_hidden.value;
+const scrollIntoView = (el: string) => document.getElementById(el).scrollIntoView();
 </script>
 
 <template>
@@ -9,22 +10,22 @@ const changeSubmenu = () => submenu_hidden.value = !submenu_hidden.value
             <div bg="[#ffffff]" border="b [#e7e8ec]" w-full h-full z-100 absolute>
                 <div flex flex-row justify-between items-center h-full | w="full xl:1024px" p="x-20px lg:0" relative mx-auto>
                     <div flex w="full xl:200px">
-                        <a cursor-pointer onclick="document.getElementById('start').scrollIntoView();">
+                        <a cursor-pointer @click="scrollIntoView('start')">
                             <img src="/img/logo.png" alt="Quick Sales" width="150px" height="30px" />
                         </a>
                     </div>
                     <div hidden xl:flex justify-between w-full items-center>
                         <div flex flex-row items-center>
                             <a
-                                cursor-pointer onclick="document.getElementById('features').scrollIntoView();"
+                                cursor-pointer @click="scrollIntoView('features')"
                                 text="[#6d7885] hover:[#222222]" ml-32px transition-colors duration-300
                             >Возможности</a>
                             <a
-                                cursor-pointer onclick="document.getElementById('price').scrollIntoView();"
+                                cursor-pointer @click="scrollIntoView('price')"
                                 text="[#6d7885] hover:[#222222]" ml-32px transition-colors duration-300
                             >Стоимость</a>
                             <a
-                                cursor-pointer onclick="document.getElementById('faq').scrollIntoView();"
+                                cursor-pointer @click="scrollIntoView('faq')"
                                 text="[#6d7885] hover:[#222222]" ml-32px transition-colors duration-300
                             >FAQ</a>
                         </div>
@@ -53,7 +54,7 @@ const changeSubmenu = () => submenu_hidden.value = !submenu_hidden.value
                 <div flex flex-col py-30px text-18px | w="full xl:1024px" p="x-20px lg:0" relative mx-auto>
                     <div h-28px>
                         <a
-                            cursor-pointer onclick="document.getElementById('features').scrollIntoView();"
+                            cursor-pointer @click="scrollIntoView('features')"
                             text="[#222222]" flex items-center justify-start
                         >
                             <div i-carbon-star-review />
@@ -62,7 +63,7 @@ const changeSubmenu = () => submenu_hidden.value = !submenu_hidden.value
                     </div>
                     <div h-28px mt-20px>
                         <a
-                            cursor-pointer onclick="document.getElementById('price').scrollIntoView();"
+                            cursor-pointer @click="scrollIntoView('price')"
                             text="[#222222]" flex items-center justify-start
                         >
                             <div i-carbon-calculator />
@@ -71,7 +72,7 @@ const changeSubmenu = () => submenu_hidden.value = !submenu_hidden.value
                     </div>
                     <div h-28px mt-20px>
                         <a
-                            cursor-pointer onclick="document.getElementById('faq').scrollIntoView();"
+                            cursor-pointer @click="scrollIntoView('faq')"
                             text="[#222222]" flex items-center justify-start
                         >
                             <div i-carbon-query />
@@ -94,26 +95,24 @@ const changeSubmenu = () => submenu_hidden.value = !submenu_hidden.value
             <section id="start" pt="104px xl:164px">
                 <div w="full xl:1024px" p="x-20px lg:0" relative mx-auto>
                     <h1 fw-500 leading="120%" text="[#222222] 28px xl:64px center">
-                        <span>
-                            Все, что нужно для
-                            <br xl:hidden />работы
-                            <br hidden xl:block />со своими лидами
-                            <img
-                                src="/img/vk.svg"
-                                alt="ВКонтакте"
-                                width="auto"
-                                height="auto"
-                                h="20px xl:48px"
-                                inline
-                            />
-                            вконтакте
-                        </span>
-                        <h2 text="center [#222222] 18px xl:36px" fw-500 mt-20px leading="110%">
-                            <span ml="-80px xl:0">от запуска рекламы</span>
+                        Все, что нужно для
+                        <br xl:hidden />работы
+                        <br hidden xl:block />со своими лидами
+                        <img
+                            src="/img/vk.svg"
+                            alt="ВКонтакте"
+                            width="auto"
+                            height="auto"
+                            h="20px xl:48px"
+                            inline
+                        />
+                        вконтакте
+                    </h1>
+                    <h2 text="center [#222222] 18px xl:36px" fw-500 mt-20px leading="110%">
+                            <span ml="-80px xl:0">от запуска рекламы </span>
                             <br class="lg:hidden" />
                             <span mr="-50px xl:0">до сквозной аналитики</span>
                         </h2>
-                    </h1>
                     <div text="14px xl:20px" mt="40px xl:100px">
                         После перехода начислим 500₽ на ваш счет,
                         <br />чтобы вы смогли протестировать сервис
